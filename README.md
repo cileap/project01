@@ -1,8 +1,5 @@
-# 主要功能
+# 互动NPU虚拟图书馆（暂定）
 
-```cpp
-#include <iostream>
-int main(){
-    std::cout << "Hello!";
-}
-```
+## 主要功能
+
+实现
