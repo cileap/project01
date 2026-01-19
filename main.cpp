@@ -1,13 +1,22 @@
 #include <QApplication>
-#include "widget.h"
+#include "mainwindow.h"
 
+/**
+ * @brief 程序入口点
+ *
+ * 初始化Qt应用并显示主窗口。
+ */
 int main(int argc, char *argv[]) {
     QApplication app(argc, argv);
 
-    Widget main_window;
-    main_window.setWindowTitle("Library Map");
-    main_window.resize(800, 500);
-    main_window.show();
+    // 设置应用信息
+    app.setApplicationName("NPU Virtual Campus Map");
+    app.setApplicationVersion("1.0.0");
+    app.setOrganizationName("NPU");
+
+    // 创建并显示主窗口
+    MainWindow mainWindow;
+    mainWindow.show();
 
     return app.exec();
 }
